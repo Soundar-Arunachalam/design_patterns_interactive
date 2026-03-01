@@ -19,18 +19,18 @@
 │       IdleState        │ │      HasCoinState        │ │    DispensingState      │
 ├────────────────────────┤ ├──────────────────────────┤ ├─────────────────────────┤
 │ insertCoin()           │ │ insertCoin()             │ │ insertCoin()            │
-│  → setState(HasCoin)   │ │  → "already inserted"   │ │  → "wait, dispensing"   │
+│  → setState(HasCoin)   │ │  → "already inserted"    │ │  → "wait, dispensing"   │
 │ pressButton()          │ │ pressButton()            │ │ pressButton()           │
-│  → "insert coin first" │ │  → setState(Dispensing) │ │  → "already dispensing" │
+│  → "insert coin first" │ │  → setState(Dispensing)  │ │  → "already dispensing" │
 │ dispense()             │ │ dispense()               │ │ dispense()              │
-│  → "no coin inserted"  │ │  → "press button first" │ │  → m.decreaseItem()     │
+│  → "no coin inserted"  │ │  → "press button first"  │ │  → m.decreaseItem()     │
 │                        │ │                          │ │  → setState(Idle|Empty) │
 └────────────────────────┘ └──────────────────────────┘ └─────────────────────────┘
                                                                         │
                                                              implements │
                                                                         │
                                               ┌─────────────────────────┐
-                                              │       EmptyState         │
+                                              │       EmptyState        │
                                               ├─────────────────────────┤
                                               │ insertCoin()            │
                                               │  → "refund given"       │
