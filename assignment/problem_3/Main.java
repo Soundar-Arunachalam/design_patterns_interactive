@@ -16,7 +16,6 @@
 public class Main {
     public static void main(String[] args) {
         TextEditor editor = new TextEditor();
-
         editor.type("Hello ");
         editor.type("World");
         System.out.println(editor.getText()); // Hello World

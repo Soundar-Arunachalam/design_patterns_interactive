@@ -1,3 +1,4 @@
+package singleton.bad_code;
 public class PaymentService {
     // Yet another Logger instance — same problem
     private Logger logger = new Logger("PaymentService");

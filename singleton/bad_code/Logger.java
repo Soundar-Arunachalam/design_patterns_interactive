@@ -1,3 +1,4 @@
+package singleton.bad_code;
 public class Logger {
     private String owner;
 

@@ -4,14 +4,14 @@
 └──────────────────────────────────────────────────────┘
 
    ┌────────────────────────────────────┐
-   │               Logger              │
+   │               Logger               │
    ├────────────────────────────────────┤
-   │ - owner: String                   │
+   │ - owner: String                    │
    ├────────────────────────────────────┤
-   │ + Logger(owner: String)           │
-   │   → prints "New Logger instance   │
-   │     created for: <owner>"         │
-   │ + log(message: String): void      │
+   │ + Logger(owner: String)            │
+   │   → prints "New Logger instance    │
+   │     created for: <owner>"          │
+   │ + log(message: String): void       │
    └────────────────────────────────────┘
           ▲                  ▲
           │ creates          │ creates
